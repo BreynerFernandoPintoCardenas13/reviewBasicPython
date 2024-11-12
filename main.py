@@ -1,11 +1,9 @@
-salary=float(input("put your salary: "))
-country=input("select your country write: 'Pais A' 'Pais B' 'Pais C' 'Pais D':\n")
-if country.lower()=="pais a":
-    taxes=salary-(0.20*salary)
-    print(f"your salary with taxes is {taxes}")
-elif country.lower()=="pais b":
-    taxes=salary-(0.15*salary)
-    print(f"your salary with taxes is {taxes}")
-elif country.lower()=="pais c":
-    taxes=salary-(0.10*salary)
-    print(f"your salary with taxes is {taxes}")
+distance=float(input("enter the distance: "))
+kmH=float(input("enter the velocity of your have: "))
+if kmH>120:
+    print("CAREFUL YOU SPEED IS TO MUCH")
+else: 
+    time=distance/kmH
+    hours=int(time)
+    minuts=round(time-hours)*60
+    print(f"you travel is {hours}hours and {minuts}minutes")
