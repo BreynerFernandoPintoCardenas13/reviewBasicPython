@@ -1,6 +1,15 @@
-inicio = int(input("Ingresa el valor de inicio: "))
-fin = int(input("Ingresa el valor de fin: "))
+import random
 
-for numero in range(inicio, fin + 1):
-    if numero % 2 == 0:
-        print(numero)
+numero_secreto = random.randint(1, 100)
+intentos = 0
+
+while True:
+    intento = int(input("Adivina el número (entre 1 y 100): "))
+    intentos += 1
+    if intento < numero_secreto:
+        print("El número es mayor. Intenta nuevamente.")
+    elif intento > numero_secreto:
+        print("El número es menor. Intenta nuevamente.")
+    else:
+        print(f"¡Felicidades! Adivinaste el número en {intentos} intentos.")
+        break
