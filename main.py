@@ -1,15 +1,16 @@
-subjects=int(input("enter the number of subjetc what you study: "))
-total=0
-for i in range(subjects):
-    i+=1
-    nota=float(input(f"enter the grade of the suject {i}: "))
-    if nota>=60:
-        print("Lets go bro tou aprove the subjetc")
-        total+=3
-    else:
-        print("hell bro what your doing whit your life?")
-        total+=0
-if total/i or total>3:
-    print(f"Congratulations the numbers of credits then you have is {total}")
-else:
-    print(f"whats up men, the credits of you have is {total}") 
+calificacion = int(input("Ingresa la calificación (0-100): "))
+
+
+match calificacion: 
+    case calificacion if 90 <= calificacion <= 100:
+        print("La calificación es: A")
+    case calificacion if 80 <= calificacion < 90:
+        print("La calificación es: B")
+    case calificacion if 70 <= calificacion < 80:
+        print("La calificación es: C")
+    case calificacion if 60 <= calificacion < 70:
+        print("La calificación es: D")
+    case _ if 0 <= calificacion < 60:
+        print("La calificación es: F")
+    case _:
+        print("Calificación inválida. Debe estar entre 0 y 100.")
