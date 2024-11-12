@@ -1,9 +1,9 @@
-cadena = input("Ingresa una cadena de texto: ")
-vocales = "aeiou"
-contador = 0
+n = int(input("Ingresa un número entero positivo: "))
 
-for letra in cadena:
-    if letra.lower() in vocales:
-        contador += 1
-
-print(f"La cantidad de vocales en la cadena es: {contador}")
+if n < 0:
+    print("Por favor, ingresa un número entero positivo.")
+else:
+    factorial = 1
+for i in range(1, n + 1):
+    factorial *= i
+    print(f"El factorial de {n} es: {factorial}")
