@@ -1,21 +1,9 @@
-hour = float(input("Enter the number of hours in the parking: "))
+n = int(input("Ingresa un número entero positivo: "))
 
-total_cost = 0
-
-if hour <= 1:
-
-    total_cost = 5
-
-    print(f"You spent ${total_cost} in the parking.")
-
-elif 2 <= hour <= 4:
-
-    total_cost = 5 + (hour - 1) * 4
-
-    print(f"You spent ${total_cost} in the parking.")
-
+if n <= 0:
+    print("Por favor, ingresa un número positivo mayor que 0.")
 else:
-
-    total_cost = 5 + 3 * (hour - 4) + 12
-
-    print(f"You spent ${total_cost} in the parking.")
+    suma = 0
+for i in range(1, n + 1):
+    suma += i
+print(f"La suma de los primeros {n} números enteros es: {suma}")
