@@ -1,7 +1,5 @@
-number=float(input("enter a number: "))
-if number>0:
-    print("your number is positive")
-elif number<0:
-    print("your number is negative")
+year=int(input("enter a year:"))
+if year%4==0 or year%400==0: 
+    print("your year is leap")
 else:
-    print("your number is zero")
+    print("your year is not leap")
