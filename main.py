@@ -1,5 +1,5 @@
-numero=int(input("enter a integer number: "))
-if (numero%2)==0:
-    print(f"{numero} es par")
+nota=float(input("ENter the grade: "))
+if nota>60:
+    print("your grade its best then 60 Happy for you, your pass")
 else:
-    print(f"{numero} no es par")
+    print("Your grade sucks its less then 60 Oh men you lost the grade")
