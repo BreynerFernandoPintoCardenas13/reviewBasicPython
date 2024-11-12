@@ -1,16 +1,14 @@
-calificacion = int(input("Ingresa la calificación (0-100): "))
-
-
-match calificacion: 
-    case calificacion if 90 <= calificacion <= 100:
-        print("La calificación es: A")
-    case calificacion if 80 <= calificacion < 90:
-        print("La calificación es: B")
-    case calificacion if 70 <= calificacion < 80:
-        print("La calificación es: C")
-    case calificacion if 60 <= calificacion < 70:
-        print("La calificación es: D")
-    case _ if 0 <= calificacion < 60:
-        print("La calificación es: F")
-    case _:
-        print("Calificación inválida. Debe estar entre 0 y 100.")
+import os
+while True:    
+    sideOne=float(input(f"enter the side 1:"))
+    sideTwo=float(input(f"enter the side 2:"))
+    sideThree=float(input(f"enter the side 3:"))
+    if sideOne<90 and sideTwo<90 and sideThree<90:
+        print("the triangle is Agudo")
+    if sideOne==90 or sideTwo==90 or sideThree==90:
+        print("the triangle is Rectacle")
+    if sideOne>90 or sideTwo>90 or sideThree>90 :
+        print("the triangle is Obtuso")
+    decision=input("you want try again? Yes=1 or Not=0: ")
+    if decision==0:
+        break
