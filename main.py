@@ -1,15 +1,10 @@
-height=float(input("enter you height in meters: "))
-weight=float(input("enter you weight in kg: "))
-imc= weight/height**2
-if imc<18.5:
-    print("you underweight")
-elif imc>18.5 and imc<=24.9:
-    print("you weight its normal")
-elif imc>18.5 and imc<24.9:
-    print("you weight its normal")
-elif imc>24.9 and imc<29.9:
-    print("you weight its high weight")
-elif imc>=30:
-    print("you weight its overweight")
-else:
-    print("try again")
+number1=float(input("enter a number: "))
+number2=float(input("enter a number: "))
+number3=float(input("enter a number: "))
+if number1>number2>=number3:
+    print(f"the more higher is {number1}")
+elif number2>number1>=number3:
+    print(f"the more higher is {number2}")
+else:  
+    number3>number1>=number2
+    print(f"the more higher is {number3}")
