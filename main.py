@@ -1,15 +1,8 @@
-import random
-
-numero_secreto = random.randint(1, 100)
-intentos = 0
+suma = 0
 
 while True:
-    intento = int(input("Adivina el número (entre 1 y 100): "))
-    intentos += 1
-    if intento < numero_secreto:
-        print("El número es mayor. Intenta nuevamente.")
-    elif intento > numero_secreto:
-        print("El número es menor. Intenta nuevamente.")
-    else:
-        print(f"¡Felicidades! Adivinaste el número en {intentos} intentos.")
+    numero = int(input("Ingresa un número entero: "))    
+    if numero % 2 != 0:
         break
+    suma += numero
+    print(f"La suma de los números pares es: {suma}")
