@@ -1,17 +1,15 @@
-while True:
-    grade=float(input("enter the grade: "))
-    bonification=input("you did adicional task? Answer yes or no: ")
-    if bonification.lower()=="yes":
-        operation=((5/100)*grade)+grade
-        if operation>100:
-            print(f"Great, with the adicional task your final grade is: 100")
-            break
-        else:
-            print(f"Great, with the adicional task your final grade is: {operation}")
-            break
-    elif bonification.lower()=="no":
-        print(f"Okey you final grade is: {grade}")
-        break
+subjects=int(input("enter the number of subjetc what you study: "))
+total=0
+for i in range(subjects):
+    i+=1
+    nota=float(input(f"enter the grade of the suject {i}: "))
+    if nota>=60:
+        print("Lets go bro tou aprove the subjetc")
+        total+=3
     else:
-        print("try again and follow the instructions")
-        
+        print("hell bro what your doing whit your life?")
+        total+=0
+if total/i or total>3:
+    print(f"Congratulations the numbers of credits then you have is {total}")
+else:
+    print(f"whats up men, the credits of you have is {total}") 
