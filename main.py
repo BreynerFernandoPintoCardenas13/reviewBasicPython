@@ -1,9 +1,6 @@
-n = int(input("Ingresa un número entero positivo: "))
+inicio = int(input("Ingresa el valor de inicio: "))
+fin = int(input("Ingresa el valor de fin: "))
 
-if n < 0:
-    print("Por favor, ingresa un número entero positivo.")
-else:
-    factorial = 1
-for i in range(1, n + 1):
-    factorial *= i
-    print(f"El factorial de {n} es: {factorial}")
+for numero in range(inicio, fin + 1):
+    if numero % 2 == 0:
+        print(numero)
