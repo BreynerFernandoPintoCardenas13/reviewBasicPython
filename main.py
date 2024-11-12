@@ -1,11 +1,13 @@
-numericalNote=input("enter a numerical note: ")
-if numericalNote.lower()=="a":
-    print("you are a fucking best you grade is betwen 100-90")
-elif numericalNote.lower()=="b":
-    print("very nice bro you grade is betwen 80-89")
-elif numericalNote.lower()=="c":
-    print("you can do better you grade is betwen 70-79")
-elif numericalNote.lower()=="d":
-    print("men you have to improve you grade is betwen 60-69")
-elif numericalNote.lower()=="f":
-    print("Bruh your grade its more lower then 60, better go to work")
+desicion=int(input(f"if you want convert the temperature to celsius enter [1]\nif you want convert to farenheit[2]\n"))
+def grades(lista):
+    match lista:
+        case [1]:
+            gradesIn=float(input("enter a temperature in farhenheit:"))
+            conversion=(gradesIn-32)*(5/9)
+            return f"the conversion is: {conversion}"
+        case [2]:
+            gradesIn=float(input("enter a temperature in celsius:"))
+            conversion=gradesIn*(9/5)+32
+            return f"the conversion is:{conversion}"
+
+print(grades([desicion]))  # Salida: "Lista con tres elementos: 1, 2, 3"
